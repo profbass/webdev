@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, maximum-scale=1 user-scalable=no">
     <!-- Styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:800,600,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:800,600,400|Josefin+Slab:600' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     
     <link rel="stylesheet" href="public/css/encon.min.css">
@@ -20,7 +20,7 @@
     
 <div id="navWrapper">
         <nav class="navbar">
-            <div class="container-fluid">
+            <div class="container">
                 <!-- Main Menu -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
@@ -37,11 +37,11 @@
     </div>
     <section class="content-section" id="home">
         <div id="paralax-1" class="parallax-layer">&nbsp;</div>
-        <div id="paralax-2" class="parallax-layer" data-enllax-ratio="0.6">&nbsp;</div>
-        <div id="paralax-3" class="parallax-layer" data-enllax-ratio="0.6">&nbsp;</div>
-        <div id="paralax-4" class="parallax-layer" data-enllax-ratio="0.5">&nbsp;</div>
-        <div id="paralax-5" class="parallax-layer" data-enllax-ratio="0.5">&nbsp;</div>
-        <div id="paralax-6" class="parallax-layer" data-enllax-ratio="0.4">&nbsp;</div>
+        <div id="paralax-2" class="parallax-layer" data-enllax-ratio="0.5">&nbsp;</div>
+        <div id="paralax-3" class="parallax-layer" data-enllax-ratio="0.5">&nbsp;</div>
+        <div id="paralax-4" class="parallax-layer" data-enllax-ratio="0.4">&nbsp;</div>
+        <div id="paralax-5" class="parallax-layer" data-enllax-ratio="0.4">&nbsp;</div>
+        <div id="paralax-6" class="parallax-layer" data-enllax-ratio="0.3">&nbsp;</div>
         <div id="paralax-7" class="parallax-layer" data-enllax-ratio="0.3">&nbsp;</div>
         <div id="paralax-8" class="parallax-layer" data-enllax-ratio="0.2">&nbsp;</div>
         <div id="paralax-9" class="parallax-layer" data-enllax-ratio="0.1">&nbsp;</div>

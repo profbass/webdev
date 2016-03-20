@@ -1,3 +1,5 @@
+@import "../variables.less";
+
 html, body{
 	height:100%;
 	margin:0;
@@ -16,6 +18,30 @@ body{
 	position: absolute;
 	z-index: 1000;
 	width: 100%;
+	font-family: 'Josefin Slab', serif;
+	&.fixey{
+		background-color: #521223;
+		nav{
+			.box-shadow(0px 1px 3px 0px rgba(0,0,0,0.35));
+		}
+	}
+	nav.navbar{
+		ul{
+			width: 100%;
+			text-align: center;
+			li{
+				a{
+					padding: 25px 39px;
+					color: #E2A154;
+					font-size: 23px;
+					text-transform: uppercase;
+					&:hover{
+						background: none;
+					}
+				}
+			}
+		}
+	}
 }
 
 #home{

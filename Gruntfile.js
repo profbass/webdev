@@ -17,14 +17,13 @@ module.exports = function (grunt) {
                 tasks: ['uglify']
             },
         },
-        // "less"-task configuration
         less: {
-            // production config is also available
             encon: {
-                options: {
-                    // Specifies directories to scan for @import directives when parsing. 
-                    // Default value is the directory of the source, which is probably what you want.
-                    paths: ["public/css/"],
+                options: { 
+                    paths: ["public/css/"], // Specifies directories to scan for @import directives when parsing.
+                    compress: true,
+                    yuicompress: true,
+                    optimization: 2
                 },
                 files: {
                     // compilation.css  :  source.less
@@ -43,6 +42,5 @@ module.exports = function (grunt) {
             }
         },
     });
-     // the default task (running "grunt" in console) is "watch"
-     grunt.registerTask('default', ['watch']);
+     grunt.registerTask('default', ['less','uglify','watch']);
 };

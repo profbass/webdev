@@ -16,8 +16,8 @@ var EnconSite = function(){
 		this.animate 			= $('.animate'); 
 		this.isMobile 			= /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? true : false;
 		this.init();
-};  
-
+}; 
+ 
 EnconSite.prototype =  {  
 	init: function() {	
 		// sets each sectio to the window's height
@@ -67,15 +67,17 @@ EnconSite.prototype =  {
 
 	stickyNav: function() {
 		if ( this.win.scrollTop() >= this.navPosition ) {
-          this.navbar.css({
+          	this.navbar.css({
 				'position' : 'fixed',
 				'top' : '0'
 			});
+        	this.navbar.addClass('fixey');
         } else if ( this.win.scrollTop() <= this.navPosition  ) {
 	    	this.navbar.css({
 				'position' : 'absolute',
 				'top' : this.navPosition,
 			});
+			this.navbar.removeClass('fixey');
         }
 	},
 
