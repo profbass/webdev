@@ -1,0 +1,54 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #521223;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  padding-bottom: 150px;
+}
+#navWrapper {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+}
+#home {
+  position: relative;
+}
+#home .parallax-layer {
+  position: absolute;
+  width: 100%;
+  background-position: cover center;
+  background-size: auto 100%;
+  background-repeat: none;
+}
+#home #paralax-1 {
+  background-image: url('../img/encon/1-sky.png');
+}
+#home #paralax-2 {
+  background-image: url('../img/encon/2-clouds.png');
+}
+#home #paralax-3 {
+  background-image: url('../img/encon/3-logo.png');
+}
+#home #paralax-4 {
+  background-image: url('../img/encon/4-mountians.png');
+}
+#home #paralax-5 {
+  background-image: url('../img/encon/5-trees.png');
+}
+#home #paralax-6 {
+  background-image: url('../img/encon/6-trees.png');
+}
+#home #paralax-7 {
+  background-image: url('../img/encon/7-trees.png');
+}
+#home #paralax-8 {
+  background-image: url('../img/encon/8-trees.png');
+}
+#home #paralax-9 {
+  background-image: url('../img/encon/9-trees.png');
+}
