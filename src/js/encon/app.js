@@ -9,7 +9,7 @@ var EnconSite = function(){
 		this.content 			= $('.section-content');
 		this.contentHeight 		= this.content.height();
 		this.navbar 			= $('#navWrapper');
-		this.navbarHeight 		= this.navbar.height();
+		this.navbarHeight 		= 90;
 		this.navDistance		= this.navbar.offset().top;
 		this.navPosition		= this.winHeight - this.navbarHeight;
 		this.navLink 			= $(".navbar-nav a[href^='#'], a.nav-link[href^='#'], #nav-mobile a[href^='#']");
@@ -38,11 +38,6 @@ EnconSite.prototype =  {
 		// Set position of navbar at the top
 		this.navbar.css({
 			'top' : this.navPosition,
-		});
-
-		// encon has position
-		this.enconHash.css({
-			'padding-top': ((window.innerHeight / 2) - (this.enconHash.height() / 2) - 100 )
 		});
 
 		// scrollspy

@@ -1,12 +1,25 @@
+// imports
 @import "../variables.less";
 
+// colors
+@red: #521223;
+@redlt: #811F36;
+@gold: #E2A154;
+
+
+/*****************************
+******************************
+	General Styles
+******************************
+*****************************/
+
 html, body{
-	height:100%;
+	//height:100%;
 	margin:0;
 	padding:0;
 }
 body{
-	background-color: #521223;
+	background-color: @red;
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 	padding-bottom: 150px;
@@ -14,15 +27,91 @@ body{
 
 }
 
+h1{
+	color: @gold;
+	font-family: 'Josefin Slab', serif;
+	font-size: 72px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1rem;
+	margin-top:80px;
+	&:after {
+		content: "";
+		display: block;
+		border-top: 3px solid @gold;
+		position: relative;
+		top: -45px;
+		z-index: 1;
+	}
+	span{
+		display: inline-block;
+		padding: 0 20px;
+		background: @red;
+		z-index: 100;
+		position: relative;
+	}
+}
+
+h2{
+	color: #fff;
+	font-family: 'Josefin Slab', serif;
+	font-size: 44px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: .5rem;
+	margin-top:80px;
+}
+
+h3{
+	color: #fff;
+	font-family: 'Josefin Slab', serif;
+	font-size: 32px;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 160%;
+	letter-spacing: .5rem;
+}
+
+a{
+	color: @gold;
+	&:hover{
+		color: @gold;
+	}
+	&:focus{
+		color: @gold;
+	}
+}
+
+p{
+	font-size: 18px;
+	line-height: 150%;
+}
+
+
+section.backgroundLight{
+	background: @redlt;
+	h1{
+		span{
+			background: @redlt;
+		}
+	}
+}
+
+/*****************************
+******************************
+	Navbar
+******************************
+*****************************/
+
 #navWrapper{
 	position: absolute;
 	z-index: 1000;
 	width: 100%;
 	font-family: 'Josefin Slab', serif;
 	&.fixey{
-		background-color: #521223;
 		nav{
-			.box-shadow(0px 1px 3px 0px rgba(0,0,0,0.35));
+			background-color: @red;
+			.box-shadow(0px 1px 3px 0px rgba(0,0,0,0.15));
 		}
 	}
 	nav.navbar{
@@ -31,12 +120,22 @@ body{
 			text-align: center;
 			li{
 				a{
-					padding: 25px 39px;
-					color: #E2A154;
+					padding: 25px 20px;
+					color: @gold;
 					font-size: 23px;
 					text-transform: uppercase;
+					border-bottom: 5px solid @red;
+					.transition(border ease-in .2s );
 					&:hover{
 						background: none;
+					}
+					&:focus{
+						background: none;
+					}
+				}
+				&.active{
+					a{
+						border-bottom: 5px solid @gold;
 					}
 				}
 			}
@@ -44,13 +143,19 @@ body{
 	}
 }
 
+/*****************************
+******************************
+	Top Parallax Styles
+******************************
+*****************************/
+
 #home{
 	position: relative;
 	.parallax-layer {
 		position: absolute;
 	    width: 100%;
 	    background-position: cover center;
-	    background-size: auto 100%;
+	    background-size: auto;
 	    background-repeat: none;
 	}
 	#paralax-1{
@@ -81,3 +186,116 @@ body{
 		background-image: url('../img/encon/9-trees.png');
 	}
 }
+
+/*****************************
+******************************
+	Location Styles
+******************************
+*****************************/
+
+#location{
+	h3.phone{
+		padding: 15px 20px;
+		margin-top: 30px;
+		border-left: 1px solid @gold;
+	}
+}
+
+
+
+/*****************************
+******************************
+	RSVP Form Styles
+******************************
+*****************************/
+
+#rsvp{
+	form{
+        .row{
+        	@media (min-width: @screen-phone) {
+				padding: 20px 0;
+			}
+			.col-sm-6{
+				@media (max-width: @screen-phone) {
+				  	padding-top: 12px;
+				  	padding-bottom: 12px;
+				}
+			}
+        }
+        fieldset {
+	    	border: none;
+	    	display: block;
+	    	label{
+	    		color: #999;
+			    line-height: 1.8em;
+			    font-size: 1em;
+			    width: 80%;
+			    display: block;
+			    padding-left: 0.6em;
+			    font-weight: 500;
+	    	}
+	       	&.styled-input {
+	        	position: relative;
+		       	label {
+			        color: #999;
+			        position: absolute;
+			        top: 0;
+			        left: 0;
+			        font-size: 1.2em;
+			        font-weight: 500;
+			        .transition(all 0.15s ease-in-out);
+			        pointer-events: none;
+			    }
+		       	input[type="text"]:focus ~ label,
+		       	input[type="text"]:valid ~ label,
+		       	select:focus ~ label,
+		       	select:valid ~ label  {
+		        	top: -1.6rem;
+		         	position: absolute;
+		        	font-size: 1em;
+		        	.transition(all 0.15s ease-in-out); 
+		        	color: @gold;
+		        }
+		        input[type="text"]:valid ~ label{
+		        	color: #fff !important;
+		        }
+		        i{
+		        	position: absolute;
+		        	right: 0;
+		        }
+		    }
+		    input[type="text"] {
+				margin-right: 0;
+        		width: 100%;
+				.appearance(none);
+				.transition(all 0.2s ease-in-out);
+				background: transparent;
+				border: none;
+				border-bottom: 2px solid #fff;
+				padding: 0.3em 0.5em 0.2em 0.5em;
+				text-decoration: none;
+				outline: 0;
+				line-height: 1em;
+				margin: 0;
+				font-size: 1.4em;
+				font-weight: 400;
+				color: black; 
+				&:focus {
+			    	border-bottom: @gold 1px solid;
+			    }
+			}
+	    } // end fieldset
+		select{
+			.appearance(none);
+			background: transparent;
+			.border-radius(0);
+			.box-shadow(none);
+			border:none;
+			border-bottom: 2px solid #fff;
+			background-clip: padding-box !important;
+			&:focus {
+			    	border-bottom: @gold 1px solid;
+			    }
+		}
+	}
+}// End #rsvp
