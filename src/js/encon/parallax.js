@@ -1,0 +1,71 @@
+var Parallaxy = function(){
+		this.win 				= $(window);
+		this.body 				= $('body');
+		this.winHeight 			= window.innerHeight;
+		this.winWidth 			= window.innerWidth;
+		this.isMobile 			= /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? true : false;
+		this.init();
+}; 
+Parallaxy.prototype =  { 
+	init: function() {
+
+		var platform = navigator.platform.toLowerCase();
+		var userAgent = navigator.userAgent.toLowerCase();
+
+		if ( platform.indexOf('ipad') != -1  ||  platform.indexOf('iphone') != -1 ) 
+		{
+			this.dispelParallax();
+		}
+		
+		else if (platform.indexOf('win32') != -1 || platform.indexOf('linux') != -1)
+		{
+			this.castParallax();					
+			if ($.browser.webkit)
+			{
+				this.castSmoothScroll();
+			}
+		}
+		
+		else
+		{
+			this.castParallax();
+		}
+
+	},
+
+	castParallax: function() {
+
+		var opThresh = 350;
+		var opFactor = 750;
+
+		window.addEventListener("scroll", function(event){
+
+			var top = this.pageYOffset;
+
+			var layers = document.getElementsByClassName("parallax-layer");
+			var layer, speed, yPos;
+			for (var i = 0; i < layers.length; i++) {
+				layer = layers[i];
+				speed = layer.getAttribute('data-speed');
+				var yPos = -(top * speed / 100);
+				layer.setAttribute('style', 'transform: translate3d(0px, ' + yPos + 'px, 0px)');
+
+			}
+		});
+
+
+	},
+
+	dispelParallax: function() {
+		$("#nonparallax").css('display','block');
+		$("#parallax").css('display','none');
+	},
+
+	castSmoothScroll: function() {
+		$.srSmoothscroll({
+			step: 80,
+			speed: 300,
+			ease: 'linear'
+		});
+	}
+}
