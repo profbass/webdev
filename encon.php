@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, maximum-scale=1 user-scalable=no">
     <!-- Styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:200|Josefin+Slab:600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:100|Josefin+Slab:600' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     
     <link rel="stylesheet" href="public/css/encon.min.css">
@@ -17,37 +17,37 @@
 
 </head>
 <body>
-    
-<div id="navWrapper">
-        <nav class="navbar">
-            <div class="container">
-                <!-- Main Menu -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#overview"><span>Overview</span></a></li>
-                        <li><a href="#agentDay"><span>Agent Day</span></a></li>
-                        <li><a href="#schedule"><span>Schedule</span></a></li>
-                        <li><a href="#speakers"><span>Speakers</span></a></li>
-                        <li><a href="#sponsors"><span>Sponsors</span></a></li>
-                        <li><a href="#location"><span>Location</span></a></li>
-                        <li><a href="#rsvp"><span>RSVP</span></a></li>
-                    </ul>
-                </div> <!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
-    </div>
-    <section class="content-section" id="home">
-        <div id="paralax-1" class="parallax-layer">&nbsp;</div>
-        <div id="paralax-2" class="parallax-layer" data-enllax-ratio="0.5">&nbsp;</div>
-        <div id="paralax-3" class="parallax-layer" data-enllax-ratio="0.5">&nbsp;</div>
-        <div id="paralax-4" class="parallax-layer" data-enllax-ratio="0.4">&nbsp;</div>
-        <div id="paralax-5" class="parallax-layer" data-enllax-ratio="0.4">&nbsp;</div>
-        <div id="paralax-6" class="parallax-layer" data-enllax-ratio="0.3">&nbsp;</div>
-        <div id="paralax-7" class="parallax-layer" data-enllax-ratio="0.3">&nbsp;</div>
-        <div id="paralax-8" class="parallax-layer" data-enllax-ratio="0.2">&nbsp;</div>
-        <div id="paralax-9" class="parallax-layer" data-enllax-ratio="0.1">&nbsp;</div>
-    </section>
 
+<div id="navWrapper">
+    <nav class="navbar">
+        <div class="container">
+            <!-- Main Menu -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#overview"><span>Overview</span></a></li>
+                    <li><a href="#agentDay"><span>Agent Day</span></a></li>
+                    <li><a href="#schedule"><span>Schedule</span></a></li>
+                    <li><a href="#speakers"><span>Speakers</span></a></li>
+                    <li><a href="#sponsors"><span>Sponsors</span></a></li>
+                    <li><a href="#location"><span>Location</span></a></li>
+                    <li><a href="#rsvp"><span>RSVP</span></a></li>
+                </ul>
+            </div> <!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+    </nav>
+</div>
+<section id="home">
+    <div id="paralax-1" class="parallax-layer">&nbsp;</div>
+    <div id="paralax-2" class="parallax-layer fixed" data-enllax-ratio="2">&nbsp;</div>
+    <div id="paralax-3" class="parallax-layer fixed" data-speed="5">&nbsp;</div>
+    <div id="paralax-4" class="parallax-layer fixed" data-speed="8">&nbsp;</div>
+    <div id="paralax-5" class="parallax-layer fixed" data-speed="16">&nbsp;</div>
+    <div id="paralax-6" class="parallax-layer fixed" data-speed="26">&nbsp;</div>
+    <div id="paralax-7" class="parallax-layer fixed" data-speed="36">&nbsp;</div>
+    <div id="paralax-8" class="parallax-layer fixed" data-speed="50">&nbsp;</div>
+    <div id="paralax-9" class="parallax-layer">&nbsp;</div>
+</section>
+<div id="siteWrapper"> 
     <section class="content-section" id="overview">
         <div class="container">
             <h1 class="encon-hash"><span>Overview</span></h1>
@@ -89,7 +89,50 @@
     </section>
 
     <section class="content-section" id="schedule">
-        <div class="container"><h1 class="encon-hash"><span>Schedule</span></h1></div>
+        <div class="container">
+            <h1 class="encon-hash"><span>Schedule</span></h1>
+            
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="schedule-wrapper">
+                        <div class="row">
+                            <div class="col-xs-6 schedule-time text-right"><h4>8:00 am</h4></div>
+                            <div class="col-xs-6 schedule-info">
+                                <div class="timeline-dot"></div>
+                                Things and stuff
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 schedule-time text-right"><h4>8:00 am</h4></div>
+                            <div class="col-xs-6 schedule-info">
+                                <div class="timeline-dot"></div>
+                                Things and stuff
+                            </div>
+                        </div>
+                    </div> <!-- end schedule wrapper-->
+                </div> <!-- end column-->
+                <div class="col-sm-6">
+                    <div class="schedule-wrapper">
+                        <div class="row">
+                            <div class="col-xs-6 schedule-time text-right"><h4>8:00am</h4></div>
+                            <div class="col-xs-6 schedule-info">
+                                <div class="timeline-dot"></div>
+                                Things and stuff
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 schedule-time text-right"><h4>8:00am</h4></div>
+                            <div class="col-xs-6 schedule-info">
+                                <div class="timeline-dot"></div>
+                                Things and stuff
+                            </div>
+                        </div>
+                    </div> <!-- end schedule wrapper-->
+                </div> <!-- end column-->
+            </div>
+
+            
+        </div>
     </section>
 
     <section class="content-section backgroundLight" id="speakers">
@@ -361,26 +404,30 @@
         </div>
     </section>
 
-    <!-- Mobal -->
-    <div id ="formModal" class="modal fade">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">
-                        <span aria-hidden="true">&times;</span>
-                        <span class="sr-only">Close</span>
-                    </button>
-                </div>
-                <div class="modal-body text-center">
-                    <h3>THANK YOU FOR YOUR RESPONSE!</h3>
-                    <p> We look forward to seeing you in November!</p>
-                </div>
+</div> <!-- end wrapper -->
+
+
+<!-- Mobal -->
+<div id ="formModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
             </div>
-            <!-- /.modal-content -->    
+            <div class="modal-body text-center">
+                <h3>THANK YOU FOR YOUR RESPONSE!</h3>
+                <p> We look forward to seeing you in November!</p>
+            </div>
         </div>
-        <!-- /.modal-dialog --> 
+        <!-- /.modal-content -->    
     </div>
-    <!-- /.modal -->
+    <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal -->
+
 
 <!-- Scripts -->
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -393,12 +440,14 @@
         
         // site application Instantiation
         var EnCon = new EnconSite();
+        var Parallax = new Parallaxy();
         // parallax scrolling
-        $(window).enllax();
+        //$(window).enllax();
 
         // sticky header nav detection
         $(window).scroll(function(el) {
             EnCon.stickyNav();
+            //EnCon.castParallax();
         });
 
         $('#rsvpForm').on('submit', function(e) {

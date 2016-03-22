@@ -34,7 +34,7 @@ module.exports = function (grunt) {
         uglify:{
             encon: {
                 files: {
-                  'public/js/encon.min.js': ['src/js/encon/app.js','src/js/encon/jquery.enllax.js']
+                  'public/js/encon.min.js': ['src/js/encon/app.js','src/js/encon/parallax.js']
                 },
                 options: {
                   mangle: false

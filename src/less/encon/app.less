@@ -34,7 +34,7 @@ h1{
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 1rem;
-	margin-top:80px;
+	margin-top:120px;
 	&:after {
 		content: "";
 		display: block;
@@ -72,6 +72,14 @@ h3{
 	letter-spacing: .5rem;
 }
 
+h4{
+	color: #fff;
+	font-family: 'Josefin Slab', serif;
+	font-size: 24px;
+	text-transform: uppercase;
+	line-height: 160%;
+}
+
 a{
 	color: @gold;
 	&:hover{
@@ -87,7 +95,9 @@ p{
 	line-height: 150%;
 }
 
-
+section.content-section{
+	padding: 0 0 30px 0;
+}
 section.backgroundLight{
 	background: @redlt;
 	h1{
@@ -96,7 +106,11 @@ section.backgroundLight{
 		}
 	}
 }
-
+ #siteWrapper{
+ 	position: relative;
+ 	z-index: 98;
+ 	background: @red;
+ }
 /*****************************
 ******************************
 	Navbar
@@ -112,11 +126,24 @@ section.backgroundLight{
 		nav{
 			background-color: @red;
 			.box-shadow(0px 1px 3px 0px rgba(0,0,0,0.15));
+			ul{
+				li{
+					a{
+						border-bottom: 3px solid @red;
+					}
+					&.active{
+						a{
+							border-bottom: 3px solid @gold;
+						}
+					}
+				}
+			}
 		}
 	}
 	nav.navbar{
 		ul{
-			width: 100%;
+		    display: inline-block;
+		    float: none;
 			text-align: center;
 			li{
 				a{
@@ -124,18 +151,12 @@ section.backgroundLight{
 					color: @gold;
 					font-size: 23px;
 					text-transform: uppercase;
-					border-bottom: 5px solid @red;
 					.transition(border ease-in .2s );
 					&:hover{
 						background: none;
 					}
 					&:focus{
 						background: none;
-					}
-				}
-				&.active{
-					a{
-						border-bottom: 5px solid @gold;
 					}
 				}
 			}
@@ -152,38 +173,88 @@ section.backgroundLight{
 #home{
 	position: relative;
 	.parallax-layer {
-		position: absolute;
+		background-position: bottom center;
+	    background-size: auto 100%;
+	    background-repeat: repeat-x;
 	    width: 100%;
-	    background-position: cover center;
-	    background-size: auto;
-	    background-repeat: none;
+	    height: 1000px;
+	    position: absolute;
+	}
+	.parallax-layer.fixed{
+	    position: fixed;
 	}
 	#paralax-1{
-		background-image: url('../img/encon/1-sky.png');
+		background-image: url('../svg/encon/1-sky.svg');
 	}
 	#paralax-2{
-		background-image: url('../img/encon/2-clouds.png');
+		background-image: url('../svg/encon/2-clouds.svg');
 	}
 	#paralax-3{
-		background-image: url('../img/encon/3-logo.png'); 
+		background-image: url('../svg/encon/3-logo.svg'); 
 	}
 	#paralax-4{
-		background-image: url('../img/encon/4-mountians.png');
+		background-image: url('../svg/encon/4-mountians.svg');
 	}
 	#paralax-5{
-		background-image: url('../img/encon/5-trees.png');
+		background-image: url('../svg/encon/5-trees.svg');
 	}
 	#paralax-6{
-		background-image: url('../img/encon/6-trees.png');
+		background-image: url('../svg/encon/6-trees.svg');
 	}
 	#paralax-7{
-		background-image: url('../img/encon/7-trees.png');
+		background-image: url('../svg/encon/7-trees.svg');
 	}
 	#paralax-8{
-		background-image: url('../img/encon/8-trees.png');
+		background-image: url('../svg/encon/8-trees.svg');
 	}
 	#paralax-9{
-		background-image: url('../img/encon/9-trees.png');
+		background-image: url('../svg/encon/9-trees.svg');
+	}
+}
+
+/*****************************
+******************************
+	Schedule Styles
+******************************
+*****************************/
+
+#schedule{
+	.schedule-wrapper{
+		h4{
+			margin:0;
+			padding: 0 30px 0 0;
+		}
+		.schedule-info{
+			background-image:linear-gradient(90deg, transparent 0%, @gold 0%, @gold 0.6%, transparent 0%, transparent 0%, transparent); 
+			background-position: 5px;
+			position: relative;
+			padding: 5px 0 30px 50px;
+			line-height: 150%;
+			display: block;
+			margin-left: -5px;
+			font-size: 20px;
+			> span{
+				display: inline-block;
+				padding-left: 5px;
+				.transform(scale(1,1));
+				.transition(transform .2s);
+				&:hover{
+					//.filter(blur(0px));
+					//.transition(filter .2s);
+					.transform(scale(1.05,1.05));
+				}
+			}
+			.timeline-dot {
+				background: #fff;
+			    position: absolute;
+			    top: 15px;
+			    left: 1px;
+			    width: 10px;
+			    height: 10px;
+			    border-radius: 50%;
+			    box-shadow: 0 0 0 2px @gold,inset 0 0 0 @gold,0 3px 0 4px transparent;
+			}
+		}
 	}
 }
 
