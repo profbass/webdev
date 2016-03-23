@@ -43,7 +43,7 @@ EnconSite.prototype =  {
 			
 			//Nav positioning
 			this.navbar.css({
-				'top' : this.navPosition
+				'top' : this.navPosition - 60
 			});
 		}
 
@@ -71,7 +71,7 @@ EnconSite.prototype =  {
 		   	var hash = this.hash;
 		   	// animate
 		   	$('html, body').animate({
-		       	scrollTop: $(hash).offset().top - 40
+		       	scrollTop: $(hash).offset().top
 		    }, 700, function(){
 		       	// when done, add hash to url
 		       	window.location.hash = hash;
@@ -91,7 +91,7 @@ EnconSite.prototype =  {
         } else if ( this.win.scrollTop() <= this.navPosition  ) {
 	    	this.navbar.css({
 				'position' : 'absolute',
-				'top' : this.navPosition,
+				'top' : this.navPosition - 60,
 			});
 			this.navbar.removeClass('fixey');
         }

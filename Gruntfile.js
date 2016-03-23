@@ -30,11 +30,31 @@ module.exports = function (grunt) {
                     "public/css/encon.min.css": "src/less/encon/app.less"
                 }
             },
+            ns: {
+                options: { 
+                    paths: ["public/css/"], // Specifies directories to scan for @import directives when parsing.
+                    compress: true,
+                    yuicompress: true,
+                    optimization: 2
+                },
+                files: {
+                    // compilation.css  :  source.less
+                    "public/css/ns.min.css": "src/less/ns/app.less"
+                }
+            },
         },
         uglify:{
             encon: {
                 files: {
-                  'public/js/encon.min.js': ['src/js/encon/app.js','src/js/encon/parallax.js']
+                  'public/js/encon.min.js': ['src/js/encon/app.js','src/js/libs/parallax.js']
+                },
+                options: {
+                  mangle: false
+                }
+            },
+             ns: {
+                files: {
+                  'public/js/ns.min.js': ['src/js/ns/app.js','src/js/libs/parallax.js']
                 },
                 options: {
                   mangle: false

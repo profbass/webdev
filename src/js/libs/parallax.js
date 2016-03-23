@@ -13,9 +13,10 @@ Parallaxy.prototype =  {
 		var platform = navigator.platform.toLowerCase();
 		var userAgent = navigator.userAgent.toLowerCase();
 
-		if ( platform.indexOf('ipad') != -1  ||  platform.indexOf('iphone') != -1 ) 
+		if ( this.isMobile ) 
 		{
 			this.dispelParallax();
+			console.log('thing');
 		}
 		
 		else if (platform.indexOf('win32') != -1 || platform.indexOf('linux') != -1)
@@ -58,8 +59,8 @@ Parallaxy.prototype =  {
 	},
 
 	dispelParallax: function() {
-		$("#nonparallax").css('display','block');
-		$("#parallax").css('display','none');
+		$(".nonparallax").css('display','block');
+		$(".parallax-layer").css('display','none');
 	},
 
 	castSmoothScroll: function() {

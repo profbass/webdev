@@ -16,29 +16,41 @@
 
 
 </head>
-<body>
+<body class="loading-hide<?php if(strstr($_SERVER['HTTP_USER_AGENT'],'iPhone') || strstr($_SERVER['HTTP_USER_AGENT'],'iPod') || strstr($_SERVER['HTTP_USER_AGENT'],'iPad') || strstr($_SERVER['HTTP_USER_AGENT'],'Android')){ ?> mobile<?php } ?>">
 <div id="nav-mobile">
-    <ul class="">
-        <li><a href="#overview"><span>Overview</span></a></li>
-        <li><a href="#agentDay"><span>Agent Day</span></a></li>
-        <li><a href="#schedule"><span>Schedule</span></a></li>
-        <li><a href="#speakers"><span>Speakers</span></a></li>
-        <!-- <li><a href="#sponsors"><span>Sponsors</span></a></li> -->
-        <li><a href="#location"><span>Location</span></a></li>
-        <li><a href="#rsvp"><span>RSVP</span></a></li>
-    </ul>
+    <div class="container">
+        <p>&nbsp;</p>
+         <div class="row">
+            <div class="col-xs-offset-3 col-xs-7 col-sm-offset-4 col-sm-4 text-center">
+                <a href="#home"><img src="public/svg/encon/logo-encon.svg" class="img-responsive" alt=""></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-offset-1 col-sm-10">
+                <ul class="">
+                    <li><a href="#overview"><span>Overview</span></a></li>
+                    <li><a href="#agentDay"><span>Agent Day</span></a></li>
+                    <li><a href="#schedule"><span>Schedule</span></a></li>
+                    <li><a href="#speakers"><span>Speakers</span></a></li>
+                    <!-- <li><a href="#sponsors"><span>Sponsors</span></a></li> -->
+                    <li><a href="#location"><span>Location</span></a></li>
+                    <li><a href="#rsvp"><span>RSVP</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
 
 
 <div id="navWrapper">
 
     <nav class="navbar">
-        <div id="mobile-nav-toggle" class="hidden-md hidden-lg">
+        <div id="mobile-nav-toggle" class="">
             <div class="nav-icon"></div>
         </div>
         <div class="container">
             <!-- Main Menu -->
-            <div class="collapse hidden-sm hidden-xs" id="bs-example-navbar-collapse-1">
+            <div class="">
                 <ul class="nav navbar-nav">
                     <li><a href="#overview"><span>Overview</span></a></li>
                     <li><a href="#agentDay"><span>Agent Day</span></a></li>
@@ -53,6 +65,7 @@
     </nav>
 </div>
 <section id="home">
+    <div class="nonparallax"></div>
     <div id="paralax-1" class="parallax-layer">&nbsp;</div>
     <div id="paralax-2" class="parallax-layer fixed" data-enllax-ratio="2">&nbsp;</div>
     <div id="paralax-3" class="parallax-layer fixed" data-speed="5">&nbsp;</div>
@@ -78,6 +91,14 @@
                 </div>
                 <div class="col-sm-6">
                     <p>quality lead generation through the tools available on our platform, improved target marketing, and by leveraging the relationships within our network. Other attendees deal with similar challenges, and ENCON provides the space to ask questions, get involved in the conversation and learn from each other’s experiences face-to-face.</p>
+                </div>
+            </div>
+            <p>&nbsp;</p>
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 text-center">
+                    <div class="videoWrapper">
+                        <iframe width="560" height="349" src="//fast.wistia.net/embed/iframe/h4xdzli2ge" frameborder="0" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -108,10 +129,9 @@
         <div class="container">
             <h1 class="encon-hash"><span>Schedule</span></h1>
             <p>&nbsp;</p>
-            <p>&nbsp;</p>
             <p class="text-center"><em>Our two day member event will help prepare attendees for the future of our industry. During our one day agent summit, agents in our network can learn how to leverage the tools on our platform more efficiently to increase business.</em></p>
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-offset-2 col-sm-10 col-md-offset-0 col-md-6">
                     <h2>September 28</h2>
                     <h5>Members Only</h5>
                     <div class="schedule-wrapper">
@@ -135,7 +155,7 @@
                         </div>
                     </div> <!-- end schedule wrapper-->
                 </div> <!-- end column-->
-                <div class="col-sm-6">
+                <div class="col-sm-offset-2 col-sm-10 col-md-offset-0 col-md-6">
                     <h2>September 29</h2>
                     <h5>Members Only</h5>
                     <div class="schedule-wrapper">
@@ -159,7 +179,7 @@
 
 
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-offset-2 col-sm-10 col-md-offset-0 col-md-6">
                     <h2>September 30</h2>
                     <h5>Agent Summit - Agents Only</h5>
                     <div class="schedule-wrapper">
@@ -183,7 +203,7 @@
                         </div>
                     </div> <!-- end schedule wrapper-->
                 </div> <!-- end column-->
-                <div class="col-sm-6">
+                <div class="col-sm-offset-2 col-sm-10 col-md-offset-0 col-md-6">
                     <h2>October 1</h2>
                     <h5>Staying an Extra day? Let's have some fun!</h5>
                     <div class="schedule-wrapper">
@@ -249,10 +269,10 @@
             <h1 class="encon-hash"><span>Location</span></h1>
             <p>&nbsp;</p>
             <img src="public/img/encon/pic-hotel.jpg" class="img-responsive img-thumbnail" />
-            <h2>Park Hyatt Beaver Creek Resort and Spa</h2>
+            <h2>Park Hyatt Beaver Creek Resort &amp; Spa</h2>
             <div class="row">
                 <div class="col-sm-7">
-                    <h3 class="text-right">136 East Thomas Place<br>Beaver Creek, Colorado</h3>
+                    <h3 class="text-right">136 East Thomas Place<br>Beaver Creek, CO</h3>
                 </div>
                 <div class="col-sm-5">
                     <h3 class="text-left phone">970-949-1234</h3>
@@ -279,119 +299,17 @@
         <div class="container">
             <h1 class="encon-hash"><span>RSVP</span></h1>
             <div class="row">
-                <div class="col-sm-6">
-                    <h2>Mebers</h2>
-                    <form role="form" method="post" id="rsvpForm" action="/submit-rsvp">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <fieldset class="styled-input">
-                                    <input id="fName" required="required" type="text" name="firstNameInput">
-                                    <label for="fName">First Name </label>
-                                </fieldset>
-                            </div>
-                            <div class="col-sm-6">
-                                <fieldset class="styled-input">
-                                    <input id="lName" required="required" type="text" name="lastNameInput">
-                                    <label for="lName">Last Name </label>
-                                </fieldset>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <fieldset class="styled-input">
-                                    <input id="title" required="required" type="text" name="titleInput">
-                                    <label for="title">Title </label>
-                                </fieldset>
-                            </div>
-                            <div class="col-sm-6">
-                                <fieldset class="styled-input">
-                                    <i class="fa fa-sort-desc"></i>
-                                    <select required="required" class="form-control" id="companySelect" name="companySelect">
-                                        <option></option>
-                                        <option value="booj">booj</option>
-                                        <option value="booj">Guest</option>
-                                        <option value="Baird &amp; Warner">Baird &amp; Warner</option>
-                                        <option value="Charles Reinhart Company Realtors">Charles Reinhart Company Realtors</option>
-                                        <option value="Clark Realty Corporation">Clark Realty Corporation</option>
-                                        <option value="Danberry Realtors">Danberry Realtors</option>
-                                        <option value="Ebby Halliday Realtors">Ebby Halliday Realtors</option>
-                                        <option value="Funkhouser Real Estate Group">Funkhouser Real Estate Group</option>
-                                        <option value="Gardner Realtors">Gardner Realtors</option>
-                                        <option value="Hasson Company Realtors">Hasson Company Realtors</option>
-                                        <option value="Helen Adams Realty">Helen Adams Realty</option>
-                                        <option value="Heritage Texas Properties">Heritage Texas Properties</option>
-                                        <option value="Houlihan Lawrence">Houlihan Lawrence</option>
-                                        <option value="J.P. Weigand &amp; Sons">J.P. Weigand &amp; Sons</option>
-                                        <option value="Jack White Real Estate">Jack White Real Estate</option>
-                                        <option value="John R. Wood Realtors">John R. Wood Realtors</option>
-                                        <option value="Journey Homes">Journey Homes</option>
-                                        <option value="Kentwood Real Estate">Kentwood Real Estate</option>
-                                        <option value="LandVest, Inc.">LandVest, Inc.</option>
-                                        <option value="Lyon Real Estate">Lyon Real Estate</option>
-                                        <option value="McEnearney Associates Realtors">McEnearney Associates Realtors</option>
-                                        <option value="McGuire Real Estate">McGuire Real Estate</option>
-                                        <option value="Milestone Realty Consultants">Milestone Realty Consultants</option>
-                                        <option value="Murney Associates Realtors">Murney Associates Realtors</option>
-                                        <option value="Partners Trust">Partners Trust</option>
-                                        <option value="NP Dodge Real Estate">NP Dodge Real Estate</option>
-                                        <option value="Residential Properties Ltd.">Residential Properties Ltd.</option>
-                                        <option value="Skogman Realty">Skogman Realty</option>
-                                        <option value="Slifer Smith &amp; Frampton Real Estate">Slifer Smith &amp; Frampton Real Estate</option>
-                                        <option value="The Group, Inc. Real Estate">The Group, Inc. Real Estate</option>
-                                        <option value="Turpin Real Estate">Turpin Real Estate</option>
-                                        <option value="Windermere Real Estate/Tri-Cities">Windermere Real Estate/Tri-Cities</option>
-                                        <option value="Willis Allen Real Estate">Willis Allen Real Estate</option>
-                                        <option value="Wright Kingdom Real Estate">Wright Kingdom Real Estate</option>
-                                    </select>
-                                    <label for="title">Company </label>
-                                </fieldset>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <fieldset class="styled-input">
-                                    <input id="title" required="required" type="text" name="emailInput">
-                                    <label for="title">Email Address </label>
-                                </fieldset>
-                            </div>
-                            <div class="col-sm-6">
-                                <fieldset class="styled-input">
-                                    <i class="fa fa-sort-desc"></i>
-                                    <select required="required" class="form-control" id="tshirtSelect" name="tshirtSelect">
-                                        <option></option>
-                                        <option value="XS">XS</option>
-                                        <option value="SM">SM</option>
-                                        <option value="M">M</option>
-                                        <option value="L">L</option>
-                                        <option value="XL">XL</option>
-                                        <option value="XXL">XXL</option>
-                                    </select>
-                                    <label for="title">T-Shirt Size </label>
-                                </fieldset>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <fieldset class="styled-input">
-                                    <input id="title" required="required" type="text" name="dietaryRestrictionsInput">
-                                    <label for="title">Dietary Restrictions </label>
-                                </fieldset>
-                            </div>
-                            <div class="col-sm-6">
-                                <button type="submit" class="btn btn-primary" >Submit</button>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <small>*T-Shirts are unisex sized. See <a href="http://www.customink.com/items/sizing/116900_lineup/standard.htm" target="_blank">chart</a> for more information.</small>
-                            </div>
-                            <div class="col-sm-6">
-                            </div>
-                        </div>
-                    </form>
+                <div class="col-sm-offset-1 col-sm-10 col-md-offset-0 col-md-6">
+                    <h2 class="text-left">Agents</h2>
+                    <h5>Agent Summit - Friday, Sept. 30</h5>
+                    <p><em>This event is open to members and agents in The Enterprise Network. To RSVP, please complete the form below. Tickets cost $1,000 and include your invitation to the conference and the awards gala. </em></p>
+                    <p><a href="#" class="btn btn-default">Purchace Tickets <i class="material-icons">keyboard_arrow_right</i></span></a></p>
+                    <p>&nbsp;</p>
                 </div>
-                <div class="col-sm-6">
-                    <h2>Agents</h2>
+                <div class="col-sm-offset-1 col-sm-10 col-md-offset-0 col-md-6">
+                    <h2 class="text-left">Members</h2>
+                    <h5>Wednesday, Sept. 28 - Thursday, Sept. 29</h5>
+                    <p><em>Our event is open to Enterprise Network members only. If you are an agent in our network and are interested in attending, please see “Agents” section to purchase tickets.</em></p>
                     <form role="form" method="post" id="rsvpForm" action="/submit-rsvp">
                         <div class="row">
                             <div class="col-sm-6">
@@ -489,14 +407,12 @@
                                 </fieldset>
                             </div>
                             <div class="col-sm-6">
-                                <button type="submit" class="btn btn-primary" >Submit</button>
+                                <button type="submit" class="btn btn-default" >Submit<i class="material-icons">keyboard_arrow_right</i></span></button>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-sm-12">
                                 <small>*T-Shirts are unisex sized. See <a href="http://www.customink.com/items/sizing/116900_lineup/standard.htm" target="_blank">chart</a> for more information.</small>
-                            </div>
-                            <div class="col-sm-6">
                             </div>
                         </div>
                     </form>
@@ -538,7 +454,7 @@
 
 <script>
     jQuery(document).ready(function($) {
-
+        // mobile check
         var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? true : false;
         
         // site application Instantiation
@@ -547,11 +463,11 @@
         var Parallax = new Parallaxy();
 
         // sticky header nav detection
-        $(window).scroll(function(el) {
-            if (!isMobile){
+        if (!isMobile){
+            $(window).scroll(function(el) {
                 EnCon.stickyNav();
-            }
-        });
+            });
+        }
 
         $('.nav-icon, #nav-mobile a').on('click', function(e){
             var mobileNav = $('#nav-mobile');
