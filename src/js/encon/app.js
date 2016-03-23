@@ -25,25 +25,27 @@ EnconSite.prototype =  {
 			'min-height': this.winHeight
 		});
 
-		// positioning for parallax section
-		if( this.winHeight < 1038 ) {
-			// if it's too short forces it to 1020
-			this.home.css({
-				'min-height': '1000px'
-			});
+		if (!this.isMobile){
+			// positioning for parallax section
+			if( this.winHeight < 1038 ) {
+				// if it's too short forces it to 1020
+				this.home.css({
+					'min-height': '1000px'
+				});
 
-		} else {
-			// if it's biigger set it to the win hieght
-			this.home.css({
-				'min-height': this.winHeight
-			});
+			} else {
+				// if it's biigger set it to the win hieght
+				this.home.css({
+					'min-height': this.winHeight
+				});
 
+			}
+			
+			//Nav positioning
+			this.navbar.css({
+				'top' : this.navPosition
+			});
 		}
-
-		//Nav positioning
-		this.navbar.css({
-			'top' : this.navPosition
-		});
 
 		//vertical center content
 		this.content.each(function(index, el) {
@@ -94,22 +96,6 @@ EnconSite.prototype =  {
 			this.navbar.removeClass('fixey');
         }
 	},
-
-	// castParallax: function() {
-	// 	var opThresh = 350;
-	// 	var opFactor = 750;
-	// 	var top = this.win.pageYOffset;
-
-	// 	var layers = $(".parallax-layer");
-	// 	var layer, speed, yPos;
-	// 	for (var i = 0; i < layers.length; i++) {
-	// 		layer = layers[i];
-	// 		speed = layer.getAttribute('data-speed');
-	// 		var yPos = -(top * speed / 100);
-	// 		layer.setAttribute('style', 'transform: translate3d(0px, ' + yPos + 'px, 0px)');
-
-	// 	}
-	// },
 
 	addAnimation: function () {
 		this.animate.each(function() {

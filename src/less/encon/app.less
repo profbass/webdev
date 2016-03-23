@@ -5,6 +5,32 @@
 @red: #521223;
 @redlt: #811F36;
 @gold: #E2A154;
+@blue: #2F869D;
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
 
 
 /*****************************
@@ -22,6 +48,7 @@ body{
 	background-color: @red;
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
 	padding-bottom: 150px;
 	
 
@@ -80,6 +107,14 @@ h4{
 	line-height: 160%;
 }
 
+h5{
+	color: @blue;
+	font-size: 20px;
+	text-transform: uppercase;
+	line-height: 160%;
+	font-weight: 700;
+}
+
 a{
 	color: @gold;
 	&:hover{
@@ -94,9 +129,11 @@ p{
 	font-size: 18px;
 	line-height: 150%;
 }
-
+em{
+	  font-weight: 300;
+}
 section.content-section{
-	padding: 0 0 30px 0;
+	padding: 0 0 120px 0;
 }
 section.backgroundLight{
 	background: @redlt;
@@ -113,15 +150,22 @@ section.backgroundLight{
  }
 /*****************************
 ******************************
-	Navbar
+	Navbars
 ******************************
 *****************************/
 
+// Desktop Nav
 #navWrapper{
 	position: absolute;
 	z-index: 1000;
 	width: 100%;
 	font-family: 'Josefin Slab', serif;
+	@media (max-width: @screen-tablet) {
+		position: fixed;
+		nav{
+			background: transparent;
+		}
+	}
 	&.fixey{
 		nav{
 			background-color: @red;
@@ -142,12 +186,14 @@ section.backgroundLight{
 	}
 	nav.navbar{
 		ul{
-		    display: inline-block;
 		    float: none;
 			text-align: center;
 			li{
+		    display: inline-block;
+		    float: none;
+			text-align: center;
 				a{
-					padding: 25px 20px;
+					padding: 10px 20px;
 					color: @gold;
 					font-size: 23px;
 					text-transform: uppercase;
@@ -164,6 +210,83 @@ section.backgroundLight{
 	}
 }
 
+// MObile Nav Toggle
+#mobile-nav-toggle{
+	color: @gold;
+	padding: 12px 0px;
+	z-index: 1000;
+	float: right;
+	cursor: pointer;
+	.nav-icon {
+	  	margin: 0.6em 1em;
+	  	width: 25px;
+	  	&.active:before {
+	  		.transform( translateY(0) rotate(135deg) );
+		}
+		&.active:after {
+  			.transform( translateY(-12px) rotate(-135deg) );
+  		}
+  		&:after, 
+		&:before, 
+		& div {
+		  	background-color: @gold;
+		  	.border-radius(0px);
+		  	content: '';
+		  	display: block;
+		  	height: 5px;
+		  	margin: 7px 0;
+		  	.transition(all .2s ease-in-out);
+		}
+		&.active div{
+			.transform( scale(0) );
+		}
+	}
+}
+
+// Mobile Nav
+#nav-mobile{
+	width: 100%;
+	height: 0;
+	max-height: 0;
+	background: rgba(0,0,0,0.95);
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	overflow: hidden;
+	//display: none;
+	.transition(max-height 0.5s ease);
+	&.open{
+		height: 100%;
+		max-height: 100%;
+	}
+	body.mobile & {
+		display: block;
+	}
+	ul{
+		list-style: none;
+		display: table;
+		height: 100%;
+		width: 100%;
+		margin:0;
+		padding-top: 100px;
+		padding-left: 0px;
+		@media (max-width: @screen-tablet) {
+			padding-top: 120px;
+		}
+		li{
+			height: 15%;
+			width: 260px;
+			margin: 0;
+			padding: 0 0 0 20px;
+			a{
+				color: #fff;
+				font-size: 2.2em;
+				text-align: center;
+				display: inline-block;
+			}
+		}
+	}
+}
 /*****************************
 ******************************
 	Top Parallax Styles
@@ -219,10 +342,13 @@ section.backgroundLight{
 *****************************/
 
 #schedule{
+	h2{
+		text-align: left;
+	}
 	.schedule-wrapper{
+		margin-top: 15px;
 		h4{
 			margin:0;
-			padding: 0 30px 0 0;
 		}
 		.schedule-info{
 			background-image:linear-gradient(90deg, transparent 0%, @gold 0%, @gold 0.6%, transparent 0%, transparent 0%, transparent); 
@@ -233,15 +359,25 @@ section.backgroundLight{
 			display: block;
 			margin-left: -5px;
 			font-size: 20px;
-			> span{
+			> span.schedule-content{
+				display: block;
+				padding:10px 0 0 0;
+				max-height: 0;
+				overflow: hidden;
+				.transition(max-height 0.3s ease);
+				&.open{
+					max-height: 400px;
+				}
+			}
+			> span.schedule-title{
 				display: inline-block;
-				padding-left: 5px;
-				.transform(scale(1,1));
-				.transition(transform .2s);
+				cursor: pointer;
+				color: @gold;
 				&:hover{
-					//.filter(blur(0px));
-					//.transition(filter .2s);
 					.transform(scale(1.05,1.05));
+				}
+				.material-icons{
+					line-height: 150%;
 				}
 			}
 			.timeline-dot {
@@ -257,6 +393,36 @@ section.backgroundLight{
 		}
 	}
 }
+
+/*****************************
+******************************
+	Speakers Styles
+******************************
+*****************************/
+
+#speakers{
+	text-align: center;
+	img{ 
+		.transition(max-height 0.3s ease); 
+		.box-shadow(0px 3px 5px 0px rgba(0,0,0,0.55));
+		&:hover{
+			.transform(scale(1.05,1.05));
+		}
+	}
+	h3{
+		padding:0;
+		line-height: 120%;
+	}
+	p{
+		font-size: 22px;
+		font-weight: 100;
+	}
+	a{
+		color: #fff;
+		font-weight: 400;
+	}
+}
+
 
 /*****************************
 ******************************

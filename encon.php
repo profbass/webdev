@@ -9,26 +9,42 @@
     <meta name="viewport" content="width=device-width, maximum-scale=1 user-scalable=no">
     <!-- Styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:100|Josefin+Slab:600' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,300italic|Josefin+Slab:600' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
     <link rel="stylesheet" href="public/css/encon.min.css">
 
 
 </head>
 <body>
+<div id="nav-mobile">
+    <ul class="">
+        <li><a href="#overview"><span>Overview</span></a></li>
+        <li><a href="#agentDay"><span>Agent Day</span></a></li>
+        <li><a href="#schedule"><span>Schedule</span></a></li>
+        <li><a href="#speakers"><span>Speakers</span></a></li>
+        <!-- <li><a href="#sponsors"><span>Sponsors</span></a></li> -->
+        <li><a href="#location"><span>Location</span></a></li>
+        <li><a href="#rsvp"><span>RSVP</span></a></li>
+    </ul>
+</div>
+
 
 <div id="navWrapper">
+
     <nav class="navbar">
+        <div id="mobile-nav-toggle" class="hidden-md hidden-lg">
+            <div class="nav-icon"></div>
+        </div>
         <div class="container">
             <!-- Main Menu -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse hidden-sm hidden-xs" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a href="#overview"><span>Overview</span></a></li>
                     <li><a href="#agentDay"><span>Agent Day</span></a></li>
                     <li><a href="#schedule"><span>Schedule</span></a></li>
                     <li><a href="#speakers"><span>Speakers</span></a></li>
-                    <li><a href="#sponsors"><span>Sponsors</span></a></li>
+                    <!-- <li><a href="#sponsors"><span>Sponsors</span></a></li> -->
                     <li><a href="#location"><span>Location</span></a></li>
                     <li><a href="#rsvp"><span>RSVP</span></a></li>
                 </ul>
@@ -91,38 +107,96 @@
     <section class="content-section" id="schedule">
         <div class="container">
             <h1 class="encon-hash"><span>Schedule</span></h1>
-            
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p class="text-center"><em>Our two day member event will help prepare attendees for the future of our industry. During our one day agent summit, agents in our network can learn how to leverage the tools on our platform more efficiently to increase business.</em></p>
             <div class="row">
                 <div class="col-sm-6">
+                    <h2>September 28</h2>
+                    <h5>Members Only</h5>
                     <div class="schedule-wrapper">
                         <div class="row">
-                            <div class="col-xs-6 schedule-time text-right"><h4>8:00 am</h4></div>
-                            <div class="col-xs-6 schedule-info">
+                            <div class="col-xs-3 schedule-time"><h4>8:00 am</h4></div>
+                            <div class="col-xs-9 schedule-info">
                                 <div class="timeline-dot"></div>
                                 Things and stuff
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-6 schedule-time text-right"><h4>8:00 am</h4></div>
-                            <div class="col-xs-6 schedule-info">
+                            <div class="col-xs-3 schedule-time"><h4>8:00 am</h4></div>
+                            <div class="col-xs-9 schedule-info">
+                                <div class="timeline-dot"></div>
+                                <span class="schedule-title">Things and stuff <i class="material-icons">keyboard_arrow_up</i></span>
+                                <span class="schedule-content">
+                                    <p><em>John Sable, Managing Partner - booj</em></p>
+                                    <p>Kicking off the conference, John discusses the theme for this year’s event, how rare our network is, and the importance of deepening our relationships with each other.</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div> <!-- end schedule wrapper-->
+                </div> <!-- end column-->
+                <div class="col-sm-6">
+                    <h2>September 29</h2>
+                    <h5>Members Only</h5>
+                    <div class="schedule-wrapper">
+                        <div class="row">
+                            <div class="col-xs-3 schedule-time"><h4>8:00am</h4></div>
+                            <div class="col-xs-9 schedule-info">
+                                <div class="timeline-dot"></div>
+                                Things and stuff
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 schedule-time"><h4>8:00am</h4></div>
+                            <div class="col-xs-9 schedule-info">
                                 <div class="timeline-dot"></div>
                                 Things and stuff
                             </div>
                         </div>
                     </div> <!-- end schedule wrapper-->
                 </div> <!-- end column-->
+            </div>
+
+
+            <div class="row">
                 <div class="col-sm-6">
+                    <h2>September 30</h2>
+                    <h5>Agent Summit - Agents Only</h5>
                     <div class="schedule-wrapper">
                         <div class="row">
-                            <div class="col-xs-6 schedule-time text-right"><h4>8:00am</h4></div>
-                            <div class="col-xs-6 schedule-info">
+                            <div class="col-xs-3 schedule-time"><h4>8:00 am</h4></div>
+                            <div class="col-xs-9 schedule-info">
                                 <div class="timeline-dot"></div>
                                 Things and stuff
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-6 schedule-time text-right"><h4>8:00am</h4></div>
-                            <div class="col-xs-6 schedule-info">
+                            <div class="col-xs-3 schedule-time"><h4>8:00 am</h4></div>
+                            <div class="col-xs-9 schedule-info">
+                                <div class="timeline-dot"></div>
+                                <span class="schedule-title">Things and stuff <i class="material-icons">keyboard_arrow_up</i></span>
+                                <span class="schedule-content">
+                                    <p><em>John Sable, Managing Partner - booj</em></p>
+                                    <p>Kicking off the conference, John discusses the theme for this year’s event, how rare our network is, and the importance of deepening our relationships with each other.</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div> <!-- end schedule wrapper-->
+                </div> <!-- end column-->
+                <div class="col-sm-6">
+                    <h2>October 1</h2>
+                    <h5>Staying an Extra day? Let's have some fun!</h5>
+                    <div class="schedule-wrapper">
+                        <div class="row">
+                            <div class="col-xs-3 schedule-time"><h4>8:00am</h4></div>
+                            <div class="col-xs-9 schedule-info">
+                                <div class="timeline-dot"></div>
+                                Things and stuff
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 schedule-time"><h4>8:00am</h4></div>
+                            <div class="col-xs-9 schedule-info">
                                 <div class="timeline-dot"></div>
                                 Things and stuff
                             </div>
@@ -136,14 +210,41 @@
     </section>
 
     <section class="content-section backgroundLight" id="speakers">
-        <div class="container"><h1 class="encon-hash"><span>Speakers</span></h1></div>
+        <div class="container">
+            <h1 class="encon-hash"><span>Speakers</span></h1>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p><em>The experts and brilliant minds speaking at this year’s event! Our speakers will share their industry knowledge, tips and advice, and how it applies to real estate.</em></p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="public/img/encon/pic-amanda.png" class="img-responsive" />
+                    <h3>Amanda<br>Zaske</h3>
+                    <p><em>Marketing Directory</em> - booj</p>
+                    <p><a href="">@pandaface</a></p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="public/img/encon/pic-amanda.png" class="img-responsive" />
+                    <h3>Amanda<br>Zaske</h3>
+                    <p><em>Marketing Directory</em> - booj</p>
+                    <p><a href="">@pandaface</a></p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="public/img/encon/pic-amanda.png" class="img-responsive" />
+                    <h3>Amanda<br>Zaske</h3>
+                    <p><em>Marketing Directory</em> - booj</p>
+                    <p><a href="">@pandaface</a></p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="content-section" id="sponsors">
+    <!-- <section class="content-section" id="sponsors">
         <div class="container"><h1 class="encon-hash"><span>Sponsors</span></h1></div>
-    </section>
+    </section> -->
 
-    <section class="content-section backgroundLight" id="location">
+    <section class="content-section" id="location">
         <div class="container">
             <h1 class="encon-hash"><span>Location</span></h1>
             <p>&nbsp;</p>
@@ -174,7 +275,7 @@
         </div>
     </section>
 
-    <section class="content-section" id="rsvp">
+    <section class="content-section backgroundLight" id="rsvp">
         <div class="container">
             <h1 class="encon-hash"><span>RSVP</span></h1>
             <div class="row">
@@ -437,19 +538,56 @@
 
 <script>
     jQuery(document).ready(function($) {
+
+        var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? true : false;
         
         // site application Instantiation
         var EnCon = new EnconSite();
+        // Parallax Plugin
         var Parallax = new Parallaxy();
-        // parallax scrolling
-        //$(window).enllax();
 
         // sticky header nav detection
         $(window).scroll(function(el) {
-            EnCon.stickyNav();
-            //EnCon.castParallax();
+            if (!isMobile){
+                EnCon.stickyNav();
+            }
         });
 
+        $('.nav-icon, #nav-mobile a').on('click', function(e){
+            var mobileNav = $('#nav-mobile');
+            // toggle class for menu button
+            $('.nav-icon').toggleClass('active');
+            //open and close mobile nav
+            if ( mobileNav.hasClass('open')){
+                //menu toggle animation
+                mobileNav.removeClass('open');
+            } else {
+                //menu toggle animation
+                mobileNav.addClass('open');
+            }
+        });//end menu toggle
+
+
+        // Schedule Info toggle
+        $('.schedule-title').on('click', function(e){
+            var info = $(this).siblings('.schedule-content');
+            var arrow = $(this).children('.material-icons');
+            // toggle class for menu button
+            $(this).toggleClass('active');
+            //open and close info
+            if ( info.hasClass('open')){
+                //toggle animation
+                info.removeClass('open');
+                arrow.html('keyboard_arrow_up');
+            } else {
+                // toggle animation
+                info.addClass('open');
+                arrow.html('keyboard_arrow_down');
+            }
+        });//end schedule toggle
+
+
+        // form submission 
         $('#rsvpForm').on('submit', function(e) {
             var $form = $(this);
             var $modalBody = $('.modal-body');
