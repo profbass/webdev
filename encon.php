@@ -85,12 +85,10 @@
             <p>&nbsp;</p>
             <div class="row">
                 <div class="col-sm-6">
-                    <p>Our network is all about community and collaboration. Therefore, members are invited every year for our annual conference to explore the latest trends impacting real estate. Our event is unique in the fact that we not only provide the latest strategies, but also the method to execute them on our platform.</p>
-
-                    <p>This year the theme is “Leading the Nation: One Lead at a Time” and will focus on</p>
+                    <p>Our network is all about community and collaboration. Members are invited each year to ENCON to explore the latest trends impacting real estate. Our event is unique in the fact that we not only provide the latest strategies, but also the method to execute them on our platform. </p>
                 </div>
                 <div class="col-sm-6">
-                    <p>quality lead generation through the tools available on our platform, improved target marketing, and by leveraging the relationships within our network. Other attendees deal with similar challenges, and ENCON provides the space to ask questions, get involved in the conversation and learn from each other’s experiences face-to-face.</p>
+                    <p>This year’s theme is “Leading the Nation: One Lead at a Time” and will focus on quality lead generation through the tools available on our platform, improved target marketing, and by leveraging the relationships within our network. Attendees deal with similar challenges, and ENCON provides the space to ask questions, get involved, and learn from each other’s experiences face-to-face.</p>
                 </div>
             </div>
             <p>&nbsp;</p>
@@ -111,17 +109,33 @@
             <p>&nbsp;</p>
             <div class="row">
                 <div class="col-sm-6">
-                    <p>ENCON is much more than just a technology conference. By only working with independent brokerages and offering market exclusivity, we have the unique ability to come together to share internal processes and strategies with one another. This has fostered deep relationships among members.</p>
-
-                    <p>This year our event focuses further on building these connections. You will have the opportunity to hear directly from members across the country and how they’re leveraging components on our platform to drive business and stay competitive. Other members deal with similar challenges, and this event provides the space to ask questions, get involved in the conversation and learn from each other’s experiences.</p>
+                    <p>As agents in The Enterprise Network, you have the tools needed to stand out in a competitive market. But how are you using that to your advantage? Building on the success of ENCON, we will be hosting an Agent Summit exclusively for agents in our network to discuss how to leverage our platform to generate quality leads and increase business.</p>
 
                 </div>
                 <div class="col-sm-6">
-                    <p>ENCON is much more than just a technology conference. By only working with independent brokerages and offering market exclusivity, we have the unique ability to come together to share internal processes and strategies with one another. This has fostered deep relationships among members.</p>
-
-                    <p>This year our event focuses further on building these connections. You will have the opportunity to hear directly from members across the country and how they’re leveraging components on our platform to drive business and stay competitive. Other members deal with similar challenges, and this event provides the space to ask questions, get involved in the conversation and learn from each other’s experiences.</p>
+                    <p>Agents will hear firsthand from platform developers, marketing experts and their peers how to better leverage the tools available through our network. Agents will walk away with a clear plan of implementation for how to use our technology to make their daily workflow more efficient, how to harness the power of CRM to stay in front of clients and manage tasks, how to balance their online and offline marketing efforts, and so much more.</p>
                 </div>
             </div>
+            <p>&nbsp;</p>
+            <h4>Awards Gala</h4>
+            <p>&nbsp;</p>
+            <div class="row">
+                <div class="col-sm-6">
+                    <p>To wrap up this year’s event, we are hosting our Awards Gala following the Agent Summit where we will recognize outstanding agents in our network who have demonstrated strong leadership skills and excellence in business. Awards range from best agent website to best social media strategy and will be evaluated by a board of members.</p>
+
+                </div>
+                <div class="col-sm-6">
+                    <p>This black-tie event is open to both brokers and agents. This is a great opportunity to network with other like-minded real estate professionals over dinner, drinks and great conversation. We hope you can join us as we celebrate the amazing achievements of our agents who are setting the bar in the industry.</p>
+                </div>
+            </div>
+            <!-- <p>&nbsp;</p>
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 text-center">
+                    <div class="videoWrapper">
+                        <iframe width="560" height="349" src="//fast.wistia.net/embed/iframe/h4xdzli2ge" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div> -->
         </div>
     </section>
 
@@ -129,9 +143,16 @@
         <div class="container">
             <h1 class="encon-hash"><span>Schedule</span></h1>
             <p>&nbsp;</p>
-            <p class="text-center"><em>Our two day member event will help prepare attendees for the future of our industry. During our one day agent summit, agents in our network can learn how to leverage the tools on our platform more efficiently to increase business.</em></p>
+            <p class="text-center"><em>Our two day member event will help prepare attendees for the future of our industry. Here is a sneak peek at our event schedule! If you’re an agent interested in attending our event, check out the details for our Agent Summit and Awards Gala.</em></p>
             <div class="row">
                 <div class="col-sm-offset-2 col-sm-10 col-md-offset-0 col-md-6">
+                    <h2>September 27</h2>
+                    <h5>Guests arrive to Beaver Creek, Colorado</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-offset-2 col-sm-10 col-md-offset-0 col-md-6">
+                   
                     <h2>September 28</h2>
                     <h5>Members Only</h5>
                     <div class="schedule-wrapper">
@@ -139,18 +160,35 @@
                             <div class="col-xs-3 schedule-time"><h4>8:00 am</h4></div>
                             <div class="col-xs-9 schedule-info">
                                 <div class="timeline-dot"></div>
-                                Things and stuff
+                                Networking Breakfast
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-3 schedule-time"><h4>8:00 am</h4></div>
+                            <div class="col-xs-3 schedule-time"><h4>9:00 am</h4></div>
                             <div class="col-xs-9 schedule-info">
                                 <div class="timeline-dot"></div>
-                                <span class="schedule-title">Things and stuff <i class="material-icons">keyboard_arrow_up</i></span>
-                                <span class="schedule-content">
-                                    <p><em>John Sable, Managing Partner - booj</em></p>
-                                    <p>Kicking off the conference, John discusses the theme for this year’s event, how rare our network is, and the importance of deepening our relationships with each other.</p>
-                                </span>
+                                General Sessions
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 schedule-time"><h4>12:00 pm</h4></div>
+                            <div class="col-xs-9 schedule-info">
+                                <div class="timeline-dot"></div>
+                                Networking Lunch
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 schedule-time"><h4>1:30 pm</h4></div>
+                            <div class="col-xs-9 schedule-info">
+                                <div class="timeline-dot"></div>
+                                General Sessions
+                            </div>
+                        </div>
+                         <div class="row">
+                            <div class="col-xs-3 schedule-time"><h4>5:30 pm</h4></div>
+                            <div class="col-xs-9 schedule-info">
+                                <div class="timeline-dot"></div>
+                                Team Building + Social Hour
                             </div>
                         </div>
                     </div> <!-- end schedule wrapper-->
@@ -160,17 +198,38 @@
                     <h5>Members Only</h5>
                     <div class="schedule-wrapper">
                         <div class="row">
-                            <div class="col-xs-3 schedule-time"><h4>8:00am</h4></div>
+                            <div class="col-xs-3 schedule-time"><h4>8:00 am</h4></div>
                             <div class="col-xs-9 schedule-info">
                                 <div class="timeline-dot"></div>
-                                Things and stuff
+                                Networking Breakfast
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-3 schedule-time"><h4>8:00am</h4></div>
+                            <div class="col-xs-3 schedule-time"><h4>9:00 am</h4></div>
                             <div class="col-xs-9 schedule-info">
                                 <div class="timeline-dot"></div>
-                                Things and stuff
+                                General Sessions
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 schedule-time"><h4>12:00 pm</h4></div>
+                            <div class="col-xs-9 schedule-info">
+                                <div class="timeline-dot"></div>
+                                Networking Lunch
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 schedule-time"><h4>1:30 pm</h4></div>
+                            <div class="col-xs-9 schedule-info">
+                                <div class="timeline-dot"></div>
+                                General Sessions
+                            </div>
+                        </div>
+                         <div class="row">
+                            <div class="col-xs-3 schedule-time"><h4>6:30 pm</h4></div>
+                            <div class="col-xs-9 schedule-info">
+                                <div class="timeline-dot"></div>
+                                Group Dinner
                             </div>
                         </div>
                     </div> <!-- end schedule wrapper-->
@@ -187,9 +246,38 @@
                             <div class="col-xs-3 schedule-time"><h4>8:00 am</h4></div>
                             <div class="col-xs-9 schedule-info">
                                 <div class="timeline-dot"></div>
-                                Things and stuff
+                                Networking Breakfast
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-xs-3 schedule-time"><h4>9:00 am</h4></div>
+                            <div class="col-xs-9 schedule-info">
+                                <div class="timeline-dot"></div>
+                                General Sessions
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 schedule-time"><h4>12:00 pm</h4></div>
+                            <div class="col-xs-9 schedule-info">
+                                <div class="timeline-dot"></div>
+                                Networking Lunch
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 schedule-time"><h4>1:30 pm</h4></div>
+                            <div class="col-xs-9 schedule-info">
+                                <div class="timeline-dot"></div>
+                                General Sessions
+                            </div>
+                        </div>
+                         <div class="row">
+                            <div class="col-xs-3 schedule-time"><h4>5:30 pm</h4></div>
+                            <div class="col-xs-9 schedule-info">
+                                <div class="timeline-dot"></div>
+                                Award Gala
+                            </div>
+                        </div>
+                        <!-- example of expandable date
                         <div class="row">
                             <div class="col-xs-3 schedule-time"><h4>8:00 am</h4></div>
                             <div class="col-xs-9 schedule-info">
@@ -200,32 +288,14 @@
                                     <p>Kicking off the conference, John discusses the theme for this year’s event, how rare our network is, and the importance of deepening our relationships with each other.</p>
                                 </span>
                             </div>
-                        </div>
+                        </div> -->
                     </div> <!-- end schedule wrapper-->
                 </div> <!-- end column-->
                 <div class="col-sm-offset-2 col-sm-10 col-md-offset-0 col-md-6">
                     <h2>October 1</h2>
                     <h5>Staying an Extra day? Let's have some fun!</h5>
-                    <div class="schedule-wrapper">
-                        <div class="row">
-                            <div class="col-xs-3 schedule-time"><h4>8:00am</h4></div>
-                            <div class="col-xs-9 schedule-info">
-                                <div class="timeline-dot"></div>
-                                Things and stuff
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-3 schedule-time"><h4>8:00am</h4></div>
-                            <div class="col-xs-9 schedule-info">
-                                <div class="timeline-dot"></div>
-                                Things and stuff
-                            </div>
-                        </div>
-                    </div> <!-- end schedule wrapper-->
                 </div> <!-- end column-->
             </div>
-
-            
         </div>
     </section>
 
@@ -234,34 +304,58 @@
             <h1 class="encon-hash"><span>Speakers</span></h1>
             <p>&nbsp;</p>
             <p>&nbsp;</p>
-            <p><em>The experts and brilliant minds speaking at this year’s event! Our speakers will share their industry knowledge, tips and advice, and how it applies to real estate.</em></p>
+            <p><em>The experts and brilliant minds speaking at this year’s event! Our speakers will share their industry knowledge, tips and advice, and their application to real estate.</em></p>
             <p>&nbsp;</p>
             <p>&nbsp;</p>
             <div class="row">
                 <div class="col-sm-4">
                     <img src="public/img/encon/pic-amanda.png" class="img-responsive" />
-                    <h3>Amanda<br>Zaske</h3>
-                    <p><em>Marketing Directory</em> - booj</p>
-                    <p><a href="">@pandaface</a></p>
+                    <h3>Jon<br>Joseph</h3>
+                    <p><em>Founder</em> - UseUX</p>
+                    <p><a target="_blank" href="https://twitter.com/useux">@useux</a></p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="public/img/encon/pic-tyler.jpg" class="img-responsive" />
+                    <h3>Tyler<br>Olmsted</h3>
+                    <p><em>Production Manager</em> - booj</p>
+                    <p><a target="_blank" href="https://twitter.com/profbass">@profbass</a></p>
                 </div>
                 <div class="col-sm-4">
                     <img src="public/img/encon/pic-amanda.png" class="img-responsive" />
-                    <h3>Amanda<br>Zaske</h3>
-                    <p><em>Marketing Directory</em> - booj</p>
-                    <p><a href="">@pandaface</a></p>
+                    <h3>James<br>Olson</h3>
+                    <p><em>Director of R&amp;D</em> - booj</p>
+                    <p><a target="_blank" href="https://twitter.com/jamo6foot6">@jamo6foot6</a></p>
+                </div>
+            </div>
+            <p>&nbsp;</p>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="public/img/encon/pic-amanda.png" class="img-responsive" />
+                    <h3>Wil<br>Reynolds</h3>
+                    <p><em>Founder</em> - Seer Interactive</p>
+                    <p><a target="_blank" href="https://twitter.com/wilreynolds">@wilreynolds</a></p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="public/img/encon/pic-john-sable.jpg" class="img-responsive" />
+                    <h3>Jon <br>Sable</h3>
+                    <p><em>Managing Partner</em> - booj</p>
+                    <p><a target="_blank" href="https://twitter.com/johnsable">@johnsable</a></p>
                 </div>
                 <div class="col-sm-4">
                     <img src="public/img/encon/pic-amanda.png" class="img-responsive" />
-                    <h3>Amanda<br>Zaske</h3>
-                    <p><em>Marketing Directory</em> - booj</p>
-                    <p><a href="">@pandaface</a></p>
+                    <h3>Katelyn <br>Sheids</h3>
+                    <p><em>Inbound Marketing Lead</em> - booj</p>
+                    <p><a target="_blank" href="https://twitter.com/katedshields">@katedshields</a></p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- <section class="content-section" id="sponsors">
-        <div class="container"><h1 class="encon-hash"><span>Sponsors</span></h1></div>
+        <div class="container">
+            <h1 class="encon-hash"><span>Sponsors</span></h1>
+            <p><em>As preferred partners, these select sponsors provide value to our members by offering products and services to help take their business to the next level.</em></p>
+        </div>
     </section> -->
 
     <section class="content-section" id="location">
@@ -283,13 +377,11 @@
                 <div class="col-sm-6">
                     <p>The perfect mountain resort for all seasons, the Park Hyatt Beaver Creek Resort and Spa is the go-to destination for year-round mountain adventures. Located at the base of Beaver Creek Ski Resort and in the heart of Beaver Creek’s shopping village, you have a variety of amenities available to you including hiking, biking, shopping, dining and more.</p>
 
-                    <p>Recently redesigned accommodations highlight the hotel’s warmth and mountain sophistication, furnished with modern décor that showcases and complements the unique alpine surroundings.</p>
+                    <p>Recently redesigned accommodations highlight the hotel’s warmth and mountain sophistication, furnished with modern decor that showcases and complements the unique alpine surroundings. Take in amazing vistas from the outdoor fire pits, enjoy a relaxing spa treatment, or spend your days taking in the beautiful views as you witness the changing colors of fall.</p>
 
                 </div>
                 <div class="col-sm-6">
-                    <p>Take in amazing vistas from the outdoor fire pits, enjoy a relaxing spa treatment, or spend your days taking in the beautiful views as you witness the changing colors of fall.</p>
-
-                    <p>Room reservations must be made by August 15, 2016. Park Hyatt is offering preferred pricing to all conference attendees at the reduced rate of $189/night. Once you RSVP to the event, we will send you a detailed hotel guide that includes instructions for booking your room.</p>
+                    <p>Room reservations must be made by August 15, 2016. Park Hyatt is offering preferred pricing to all conference attendees at the reduced rate of $220/night (including the resort fee). Once you RSVP to the event, we will send you a detailed hotel guide that includes instructions for booking your room.</p>
                 </div>
             </div>
         </div>
@@ -302,14 +394,14 @@
                 <div class="col-sm-offset-1 col-sm-10 col-md-offset-0 col-md-6">
                     <h2 class="text-left">Agents</h2>
                     <h5>Agent Summit - Friday, Sept. 30</h5>
-                    <p><em>This event is open to members and agents in The Enterprise Network. To RSVP, please complete the form below. Tickets cost $1,000 and include your invitation to the conference and the awards gala. </em></p>
-                    <p><a href="#" class="btn btn-default">Purchace Tickets <i class="material-icons">keyboard_arrow_right</i></span></a></p>
+                    <p><em>This event is open to members and agents in The Enterprise Network. To RSVP, please complete the form below. Tickets cost $1,000 and include your invitation to the conference and the awards gala.</em></p>
+                    <p><a href="http://enconagentsummit.eventbrite.com" target="_blank" class="btn btn-default">Purchace Tickets <i class="material-icons">keyboard_arrow_right</i></span></a></p>
                     <p>&nbsp;</p>
                 </div>
                 <div class="col-sm-offset-1 col-sm-10 col-md-offset-0 col-md-6">
                     <h2 class="text-left">Members</h2>
                     <h5>Wednesday, Sept. 28 - Thursday, Sept. 29</h5>
-                    <p><em>Our event is open to Enterprise Network members only. If you are an agent in our network and are interested in attending, please see “Agents” section to purchase tickets.</em></p>
+                    <p><em>Our event is open to Enterprise Network members only. If you are an agent in our network and are interested in attending, please RSVP to our Agent Summit.</em></p>
                     <form role="form" method="post" id="rsvpForm" action="/submit-rsvp">
                         <div class="row">
                             <div class="col-sm-6">
@@ -420,7 +512,6 @@
             </div>
         </div>
     </section>
-
 </div> <!-- end wrapper -->
 
 
@@ -469,6 +560,7 @@
             });
         }
 
+        // Mobile Nav toggle
         $('.nav-icon, #nav-mobile a').on('click', function(e){
             var mobileNav = $('#nav-mobile');
             // toggle class for menu button

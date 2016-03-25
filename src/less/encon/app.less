@@ -10,6 +10,12 @@
 @Josefin : 'Josefin Slab', serif;
 @OpenSans : 'Open Sans', sans-serif;
 
+.red{
+	color: @red;
+}
+.gold{
+	color: @gold;
+}
 
 /*****************************
 ******************************
@@ -27,9 +33,6 @@ body{
 	color: #fff;
 	font-family: @OpenSans;
 	font-weight: 300;
-	padding-bottom: 150px;
-	
-
 }
 
 h1{
@@ -40,11 +43,11 @@ h1{
 	text-transform: uppercase;
 	letter-spacing: 1rem;
 	margin-top:120px;
-	@media (max-width: @screen-tablet) {
+	@media (max-width: @screen-md) {
 		margin-top:80px;
 		font-size: 48px;
 	}
-	@media (max-width: @screen-phone) {
+	@media (max-width: @screen-sm) {
 		margin-top:50px;
 		font-size: 30px;
 		letter-spacing: 0.5rem;
@@ -56,10 +59,10 @@ h1{
 		position: relative;
 		top: -45px;
 		z-index: 1;
-		@media (max-width: @screen-tablet) {
+		@media (max-width: @screen-md) {
 			top: -30px;
 		}
-		@media (max-width: @screen-phone) {
+		@media (max-width: @screen-sm) {
 			top: -25px;
 		}
 	}
@@ -80,11 +83,11 @@ h2{
 	text-transform: uppercase;
 	letter-spacing: .5rem;
 	margin-top:80px;
-	@media (max-width: @screen-tablet) {
+	@media (max-width: @screen-md) {
 		margin-top:30px;
 		font-size: 32px;
 	}
-	@media (max-width: @screen-phone) {
+	@media (max-width: @screen-sm) {
 		margin-top:25px;
 		font-size: 25px;
 	}
@@ -99,10 +102,10 @@ h3{
 	line-height: 160%;
 	letter-spacing: .5rem;
 	margin-top: 0;
-	@media (max-width: @screen-tablet) {
+	@media (max-width: @screen-md) {
 		font-size: 24px;
 	}
-	@media (max-width: @screen-phone) {
+	@media (max-width: @screen-sm) {
 		font-size: 16px;
 	}
 }
@@ -113,10 +116,10 @@ h4{
 	font-size: 24px;
 	text-transform: uppercase;
 	line-height: 160%;
-	@media (max-width: @screen-tablet) {
+	@media (max-width: @screen-md) {
 		font-size: 20px;
 	}
-	@media (max-width: @screen-phone) {
+	@media (max-width: @screen-sm) {
 		font-size: 14px;
 	}
 }
@@ -127,10 +130,10 @@ h5{
 	text-transform: uppercase;
 	line-height: 160%;
 	font-weight: 700;
-	@media (max-width: @screen-tablet) {
+	@media (max-width: @screen-md) {
 		font-size: 18px;
 	}
-	@media (max-width: @screen-phone) {
+	@media (max-width: @screen-sm) {
 		font-size: 14px;
 	}
 }
@@ -199,14 +202,17 @@ section.backgroundLight{
 	&:focus{
 		background: transparent;
 	}
-	.material-icons{
+	.material-icons{ // hacky BS I had todo to get the icons to align in buttons
 		font-size: 28px;
+		float: right;
+		margin-top: 3px;
 	}
 	&:hover{
 		color: @gold;
 		text-decoration: underline;
 	}
 }
+
 
 
 /*****************************
@@ -231,7 +237,7 @@ body.mobile{
 	z-index: 1000;
 	width: 100%;
 	font-family: @Josefin;
-	@media (max-width: @screen-tablet) {
+	@media (max-width: @screen-md) {
 		nav{
 			background: transparent;
 		}
@@ -256,7 +262,7 @@ body.mobile{
 	}
 	nav.navbar{
 		ul{
-			@media (max-width: @screen-tablet) {
+			@media (max-width: @screen-md) {
 				display: none;
 			}
 		    float: none;
@@ -387,11 +393,11 @@ body.mobile{
 #home{
 	position: relative;
 	min-height: 1000px;
-	@media (max-width: @screen-tablet) {
-		min-height: 400px;
+	@media (max-width: @screen-md) {
+		min-height: 400px ;
 	}
-	@media (max-width: @screen-phone) {
-		min-height: 200px;
+	@media (max-width: @screen-sm) {
+		min-height: 200px ;
 	}
 	.nonparallax{
 		background-position: top center;
@@ -455,6 +461,18 @@ body.mobile{
 	}
 	.schedule-wrapper{
 		margin-top: 15px;
+		h4{
+			font-size: 22px;
+			padding: 0;
+			margin:0;
+			@media (max-width: @screen-md) {
+				font-size: 20px;
+			}
+			@media (max-width: @screen-sm) {
+				font-size: 14px;
+				padding-top:10px;
+			}
+		}
 		.schedule-info{
 			background-image:linear-gradient(90deg, transparent 0%, @gold 0%, @gold 0.6%, transparent 0%, transparent 0%, transparent); 
 			background-position: 5px;
@@ -464,10 +482,10 @@ body.mobile{
 			display: block;
 			margin-left: -5px;
 			font-size: 20px;
-			@media (max-width: @screen-tablet) {
+			@media (max-width: @screen-md) {
 				font-size: 18px;
 			}
-			@media (max-width: @screen-phone) {
+			@media (max-width: @screen-sm) {
 				padding: 5px 0 15px 25px;
 				font-size: 18px;
 			}
@@ -542,7 +560,7 @@ body.mobile{
 #location{
 	h3{
 		margin-top: 30px;
-		&.phone{
+		&.sm{
 			padding: 15px 20px;
 			border-left: 1px solid @gold;
 		}
@@ -560,11 +578,11 @@ body.mobile{
 #rsvp{
 	form{
         .row{
-        	@media (min-width: @screen-phone) {
+        	@media (min-width: @screen-sm) {
 				padding: 20px 0;
 			}
 			.col-sm-6{
-				@media (max-width: @screen-phone) {
+				@media (max-width: @screen-sm) {
 				  	padding-top: 12px;
 				  	padding-bottom: 12px;
 				}

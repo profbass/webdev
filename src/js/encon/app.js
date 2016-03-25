@@ -91,7 +91,7 @@ EnconSite.prototype =  {
         } else if ( this.win.scrollTop() <= this.navPosition  ) {
 	    	this.navbar.css({
 				'position' : 'absolute',
-				'top' : this.navPosition - 60,
+				'top' : this.navPosition + 2,
 			});
 			this.navbar.removeClass('fixey');
         }
