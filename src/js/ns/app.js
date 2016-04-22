@@ -4,14 +4,15 @@ var NeonSines = function(){
 		this.winHeight 			= window.innerHeight;
 		this.winWidth 			= window.innerWidth; 
 		this.sections 			= $('.slide');
+		this.home 				= $('#home, .parallax-layer');
 		this.content 			= $('.section');
 		this.menuToggle 		= $('.nav-icon');
 		this.nav 				= $('.nav-fullscreen');
 		this.isMobile 			= /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? true : false;
 		this.init();
 }; 
-
-NeonSines.prototype =  {  
+ 
+NeonSines.prototype =  { 
 	init: function() { 
 		// sets each sectio to the window's height
 		this.sections.css({
@@ -27,6 +28,14 @@ NeonSines.prototype =  {
 			});
 
 		});
+		 
+		if (!this.isMobile){
+			// positioning for parallax section
+			this.home.css({
+				'min-height': this.winHeight
+			});
+		}
+
 		// Menu Toggle
 		this.menuToggle.on('click', function(){
 			$(this).toggleClass('active');

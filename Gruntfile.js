@@ -54,7 +54,7 @@ module.exports = function (grunt) {
             },
              ns: {
                 files: {
-                  'public/js/ns.min.js': ['src/js/ns/app.js','src/js/libs/parallax.js']
+                  'public/js/ns.min.js': ['src/js/ns/app.js','src/js/ns/stars.js','src/js/libs/parallax.js']
                 },
                 options: {
                   mangle: false
